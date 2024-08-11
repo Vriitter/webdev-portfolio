@@ -1,0 +1,14 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+
+body {
+   /* font-family: "Manrope", sans-serif; */
+   font-family: "IBM Plex Mono", monospace;
+}
