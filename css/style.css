@@ -19,16 +19,34 @@ a:hover {
    transition: all .3s;
 }
 
+button:hover {
+   background-color: transparent;
+   color: #1bff07;
+   transition: all .3s ease-in;
+}
+
 body {
    /* font-family: "Manrope", sans-serif; */
    font-family: "IBM Plex Mono", monospace;
    font-weight: 400;
    color: #fff;
+   letter-spacing: -0.03em;
 }
 
 .container {
    max-width: 1150px;
    margin: 0 auto;
+}
+
+.main {
+   background-color: #000;
+}
+
+.title-h2 {
+   font-weight: 400;
+   font-size: 55px;
+   line-height: 72px;
+   margin-bottom: 40px;
 }
 
 /* HERO */
@@ -70,4 +88,77 @@ body {
    font-size: 80px;
    line-height: 87%;
    color: #1bff07;
+}
+
+/* PORTFOLIO */
+.portfolio {
+   padding: 150px 0;
+}
+
+.portfolio__list {
+   margin-bottom: 80px;
+}
+
+.portfolio__item {
+   position: relative;
+   height: 550px;
+   border-radius: 30px;
+}
+
+.portfolio__item-1 {
+   background: url(../img/portfolio-1.png) center/cover no-repeat;
+}
+
+.portfolio__item-2 {
+   background: url(../img/portfolio-2.png) center/cover no-repeat;
+}
+
+.portfolio__item-3 {
+   background: url(../img/portfolio-3.png) center/cover no-repeat;
+}
+
+.portfolio__item-topic {
+   position: absolute;
+   top: 50px;
+   left: 45px;
+   height: 47px;
+   padding: 0 20px;
+   border-radius: 100px;
+   background-color: #1bff07;
+   font-size: 20px;
+   line-height: 47px;
+   text-align: center;
+   color: #000;
+}
+
+.portfolio__item-link {
+   position: absolute;
+   bottom: 50px;
+   left: 50px;
+}
+
+.portfolio__item-title {
+   margin-bottom: 5px;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 46px;
+}
+
+.portfolio__item-descr {
+   font-size: 30px;
+   line-height: 39px;
+}
+
+.portfolio__btn {
+   width: 582px;
+   height: 153px;
+   border: 1px solid #1bff07;
+   border-radius: 10px;
+   font-family: "IBM Plex Mono", monospace;
+   font-size: 30px;
+   line-height: 153px;
+   text-align: center;
+   background-color: #1bff07;
+   color: #000;
+   cursor: pointer;
 }
