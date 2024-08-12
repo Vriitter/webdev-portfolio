@@ -30,7 +30,7 @@ body {
    font-family: "IBM Plex Mono", monospace;
    font-weight: 400;
    color: #fff;
-   letter-spacing: -0.03em;
+   letter-spacing: -3%;
 }
 
 .container {
@@ -162,3 +162,122 @@ body {
    color: #000;
    cursor: pointer;
 }
+
+/* SKILLS */
+.skills {
+   padding-bottom: 150px;
+}
+
+.skills__title {
+   margin-bottom: 140px;
+}
+
+.skills__row {
+   display: flex;
+   column-gap: 44px;
+   margin-bottom: 100px;
+}
+
+.skills__row:last-child {
+   margin-bottom: 0;
+}
+
+.skills__item {
+   width: calc(50% - 22px);
+}
+
+.skills__item-title {
+   position: relative;
+   max-width: 495px;
+   margin-bottom: 15px;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 46px;
+   color: #1bff07;
+}
+
+.skills__item-title::before {
+   position: absolute;
+   top: -60px;
+   content: url(../img/icons/skills-icon-1.svg);
+   width: 45px;
+   height: 44px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   background-color: #1bff07;
+}
+
+.skills__item-title-2::before {
+   content: url(../img/icons/skills-icon-2.svg);
+}
+
+.skills__item-title-3::before {
+   content: url(../img/icons/skills-icon-3.svg);
+}
+
+.skills__item-title-4::before {
+   content: url(../img/icons/skills-icon-4.svg);
+}
+
+.skills__item-descr {
+   font-size: 22px;
+   line-height: 29px;
+}
+
+/* SERVICES
+.services {
+   padding-bottom: 150px;
+}
+
+.services__title {
+   max-width: 420px;
+   margin-bottom: 80px;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 46px;
+}
+
+.services__cards {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.services__img {
+   height: 200px;
+   border-radius: 30px;
+   background: url(../img/services-1.jpg);
+}
+
+.services__img-2 {
+   background: url(../img/services-2.jpg);
+}
+
+.services__img-3 {
+   background: url(../img/services-3.jpg);
+}
+
+.services__descr {
+   display: flex;
+   gap: 47px;
+   height: 283px;
+   padding: 40px;
+   border-radius: 30px;
+   background-color: #191c19;
+}
+
+.services__card-title {
+   width: 487px;
+   font-weight: 400;
+   font-size: 55px;
+   line-height: 110%;
+   color: #1bff07;
+}
+
+.services__card-text {
+   width: 525px;
+   font-size: 22px;
+   line-height: 29px;
+} */
