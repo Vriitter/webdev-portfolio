@@ -226,7 +226,7 @@ body {
    line-height: 29px;
 }
 
-SERVICES
+/* SERVICES */
 .services {
    padding-bottom: 150px;
 }
@@ -280,4 +280,67 @@ SERVICES
    width: 525px;
    font-size: 22px;
    line-height: 29px;
+}
+
+/* CONTACTS */
+.contacts {
+   position: relative;
+   height: 717px;
+   border-radius: 30px;
+   background-color: #191c19;
+}
+
+.contacts__img {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.contacts__title {
+   width: 536px;
+   padding-top: 100px;
+   margin-bottom: 60px;
+   font-size: 60px;
+   line-height: 60px;
+}
+
+.contacts__input {
+   display: block;
+   width: 567px;
+   height: 60px;
+   padding: 16px 40px;
+   margin-bottom: 26px;
+   border-radius: 1000px;
+   border: none;
+   background-color: #3b3d3b;
+   font-family: "IBM Plex Mono", monospace;
+   font-size: 22px;
+   color: #fff;
+}
+
+.contacts__input:last-of-type {
+   margin-bottom: 60px;
+}
+
+.contacts__input::placeholder {
+   font-family: "IBM Plex Mono", monospace;
+   font-weight: 400;
+   font-size: 22px;
+   letter-spacing: -0.03em;
+   color: #fff;
+}
+
+.contacts__btn {
+   width: 450px;
+   height: 70px;
+   border: 1px solid #1bff07;
+   border-radius: 10px;
+   font-family: "IBM Plex Mono", monospace;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 70px;
+   letter-spacing: -0.03em;
+   text-align: center;
+   color: #000;
+   background-color: #1bff07;
 }
