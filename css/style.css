@@ -90,6 +90,26 @@ body {
    color: #1bff07;
 }
 
+/* BURGER_MENU */
+.burger-btn {
+   display: none;
+   width: 36px;
+   height: 24px;
+}
+
+.burger-btn__item {
+   display: block;
+   width: 100%;
+   height: 3px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   background-color: #1bff07;
+}
+
+.burger__item:last-of-type {
+   margin-bottom: 0;
+}
+
 /* PORTFOLIO */
 .portfolio {
    padding: 150px 0;
@@ -213,6 +233,10 @@ body {
    content: url(../img/icons/skills-icon-2.svg);
 }
 
+.skills__item-title-3 {
+   width: 305px;
+}
+
 .skills__item-title-3::before {
    content: url(../img/icons/skills-icon-3.svg);
 }
@@ -331,6 +355,7 @@ body {
 }
 
 .contacts__btn {
+   display: block;
    width: 450px;
    height: 70px;
    border: 1px solid #1bff07;
@@ -356,7 +381,11 @@ body {
 
 .footer__inner {
    display: flex;
-   align-items: start;
+   flex-direction: column;
+}
+
+.footer__row {
+   display: flex;
    justify-content: space-between;
 }
 
@@ -380,4 +409,346 @@ body {
 
 .footer__col:last-child{
    text-align: right;
+}
+
+
+/* ADAPTIVE */
+@media (max-width: 1149px) {
+   .container {
+      width: 100%;
+      padding: 0 15px;
+   }
+   .contacts {
+      padding: 56px 0 86px;
+      /* height: auto; */
+   }
+   .contacts__img {
+      display: none;
+   }
+   .contacts__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+@media (max-width: 960px) {
+   .title-h2 {
+      font-size: 45px;
+      line-height: 49px;
+   }
+   .wrapper {
+      background: url(../img/hero-bg-2.png) top/cover no-repeat;
+   }
+   .header__inner {
+      align-items: center;
+   }
+   .nav {
+      display: none;
+   }
+   .burger-btn {
+      display: block;
+   }
+   .hero__inner {
+      bottom: 60px;
+   }
+   .hero__title {
+      max-width: 727px;
+      font-size: 60px;
+      line-height: 117%;
+   }
+   .portfolio__title {
+      margin-bottom: 53px;
+   }
+   .portfolio__list {
+      margin-bottom: 64px;
+   }
+   .portfolio__item {
+      height: 445px;
+      border-radius: 25px;
+   }
+   .portfolio__item-topic {
+      top: 40px;
+      left: 35px;
+      height: 38px;
+      padding: 0 16px;
+      font-size: 16px;
+      line-height: 38px;
+   }
+   .portfolio__item-link {
+      left: 40px;
+      bottom: 40px;
+   }
+   .portfolio__item-title {
+      margin-bottom: 6px;
+      font-size: 28px;
+      line-height: 36px;
+   }
+   .portfolio__item-descr {
+      font-size: 24px;
+      line-height: 31px;
+   }
+   .portfolio__btn {
+      width: 460px;
+      height: 124px;
+      font-size: 24px;
+      line-height: 124px;
+   }
+   .skills {
+      padding-bottom: 154px;
+   }
+   .skills__title {
+      width: 100%;
+      margin-bottom: 106px;
+   }
+   .skills__item-title-3 {
+      width: 100%;
+   }
+   .skills__row {
+      column-gap: 37px;
+      margin-bottom: 90px;
+   }
+   .skills__row:last-child {
+      margin-bottom: 0;
+   }
+   .skills__item {
+      width: calc(50% - 19px);
+   }
+   .skills__item-title {
+      margin-bottom: 13px;
+      font-size: 27px;
+      line-height: 36px;
+   }
+   .skills__item-descr {
+      font-size: 18px;
+      line-height: 23px;
+   }
+   .services {
+      padding-bottom: 110px;
+   }
+   .services__title {
+      margin-bottom: 56px;
+      font-size: 28px;
+      line-height: 37px;
+   }
+   .services__cards {
+      gap: 32px;
+   }
+   .services__img {
+      height: 162px;
+      border-radius: 25px;
+      background-position: center center;
+   }
+   .services__descr {
+      gap: 32px;
+      height: 229px;
+      padding: 32px;
+      border-radius: 25px;
+   }
+   .services__card-title {
+      width: 440px;
+      font-size: 45px;
+   }
+   .services__card-text {
+      width: 520px;
+      font-size: 18px;
+      line-height: 23px;
+   }
+   .footer {
+      padding: 51px 0 21px;
+   }
+   .footer__author {
+      margin-bottom: 43px;
+      margin-right: 20px;
+      font-size: 16px;
+   }
+   .footer__copy,
+   .footer__policy {
+      font-size: 14px;
+   }
+   .footer__social {
+      margin-bottom: 43px;
+      gap: 12px;
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 767px) {
+   .skills__row {
+      flex-direction: column;
+      gap: 108px;
+      margin-bottom: 108px;
+   }
+   .skills__item {
+      width: 100%;
+   }
+   .services__descr {
+      height: auto;
+      flex-direction: column;
+   }
+   .services__card-title {
+      width: 100%;
+   }
+   .services__card-text {
+      width: 100%;
+   }
+   .contacts__input {
+      width: 100%;
+   }
+}
+
+@media (max-width: 550px) {
+   .title-h2 {
+      font-size: 30px;
+      line-height: 39px;
+   }
+   .wrapper {
+      height: 716px;
+      background: url(../img/hero-bg-3.png) top center/cover no-repeat;
+   }
+   .hero__descr {
+      max-width: 310px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 20px;
+   }
+   .hero__title {
+      width: 98%;
+      font-size: 40px;
+      line-height: 117%;
+   }
+   .portfolio {
+      padding: 100px 0;
+   }
+   .portfolio__title {
+      max-width: 220px;
+      margin-bottom: 34px;
+   }
+   .portfolio__list {
+      margin-bottom: 60px;
+   }
+   .portfolio__item {
+      background-position: center left;
+   }
+   .portfolio__item-topic {
+      top: 30px;
+      left: 33px;
+      height: 30px;
+      padding: 0 20px;
+      font-size: 13px;
+      line-height: 30px;
+   }
+   .portfolio__item-link {
+      left: 35px;
+      bottom: 50px;
+   }
+   .portfolio__item-descr {
+      font-size: 16px;
+      line-height: 21px;
+   }
+   .portfolio__btn {
+      width: 100%;
+      height: 80px;
+      font-size: 18px;
+      line-height: 80px;
+   }
+   .skills {
+      padding-bottom: 104px;
+   }
+   .skills__title {
+      margin-bottom: 111px;
+   }
+   .skills__row:last-child {
+      margin-bottom: 0;
+   }
+   .skills__item-title {
+      margin-bottom: 15px;
+   }
+   .services {
+      padding-bottom: 100px;
+   }
+   .services__title {
+      font-size: 28px;
+   }
+   .services__cards {
+      gap: 60px;
+   }
+   .services__img {
+      background-size: auto;
+      background-repeat: no-repeat;
+      height: 225px;
+      background: url(../img/services-min-1.jpg);
+   }
+   .services__img-2 {
+      background: url(../img/services-min-2.jpg);
+   }
+   .services__img-3 {
+      background: url(../img/services-min-3.jpg);
+   }
+   .services__descr {
+      gap: 15px;
+      padding: 20px 30px 60px;
+   }
+   .services__card-title {
+      font-size: 33px;
+      line-height: 110%;
+   }
+   .contacts {
+      height: auto;
+      padding: 50px 0 52px;
+   }
+   .contacts__inner {
+      align-items: start;
+   }
+   .contacts__title {
+      width: 310px;
+      padding-top: 0;
+      margin-bottom: 40px;
+      font-size: 35px;
+      line-height: 107%;
+   }
+   .contacts__input {
+      height: 38px;
+      padding: 10px 21px 8px;
+      margin-bottom: 15px;
+      font-size: 15px;
+   }
+   .contacts__input:last-of-type {
+      margin-bottom: 40px;
+   }
+   .contacts__input::placeholder {
+      font-size: 15px;
+   }
+   .contacts__btn {
+      width: 100%;
+      height: 43px;
+      font-size: 15px;
+      line-height: 43px;
+   } 
+   .footer {
+      padding: 47px 0 34px;
+   }
+   .footer__row {
+      flex-direction: column;
+      gap: 20px;
+   }
+   .footer__row:last-of-type {
+      gap: 12px;
+   }
+   .footer__author {
+      width: 216px;
+      margin: 0;
+      font-size: 15px;
+      line-height: 20px;
+   }
+   .footer__copy,
+   .footer__policy {
+      font-size: 14px;
+   }
+   .footer__social {
+      margin-bottom: 40px;
+      gap: 12px;
+      font-size: 16px;
+   }
 }
