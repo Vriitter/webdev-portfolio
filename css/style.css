@@ -233,6 +233,10 @@ body {
    content: url(../img/icons/skills-icon-2.svg);
 }
 
+.skills__item-title-3 {
+   width: 305px;
+}
+
 .skills__item-title-3::before {
    content: url(../img/icons/skills-icon-3.svg);
 }
@@ -477,7 +481,11 @@ body {
       padding-bottom: 154px;
    }
    .skills__title {
+      width: 100%;
       margin-bottom: 106px;
+   }
+   .skills__item-title-3 {
+      width: 100%;
    }
    .skills__row {
       column-gap: 37px;
@@ -491,10 +499,41 @@ body {
    }
    .skills__item-title {
       margin-bottom: 13px;
-      font-size: 28px;
+      font-size: 27px;
       line-height: 36px;
    }
    .skills__item-descr {
+      font-size: 18px;
+      line-height: 23px;
+   }
+   .services {
+      padding-bottom: 110px;
+   }
+   .services__title {
+      margin-bottom: 56px;
+      font-size: 28px;
+      line-height: 37px;
+   }
+   .services__cards {
+      gap: 32px;
+   }
+   .services__img {
+      height: 162px;
+      border-radius: 25px;
+      background-position: center center;
+   }
+   .services__descr {
+      gap: 32px;
+      height: 229px;
+      padding: 32px;
+      border-radius: 25px;
+   }
+   .services__card-title {
+      width: 440px;
+      font-size: 45px;
+   }
+   .services__card-text {
+      width: 520px;
       font-size: 18px;
       line-height: 23px;
    }
@@ -507,6 +546,16 @@ body {
       margin-bottom: 108px;
    }
    .skills__item {
+      width: 100%;
+   }
+   .services__descr {
+      height: auto;
+      flex-direction: column;
+   }
+   .services__card-title {
+      width: 100%;
+   }
+   .services__card-text {
       width: 100%;
    }
 }
@@ -577,5 +626,34 @@ body {
    }
    .skills__item-title {
       margin-bottom: 15px;
+   }
+   .services {
+      padding-bottom: 100px;
+   }
+   .services__title {
+      font-size: 28px;
+   }
+   .services__cards {
+      gap: 60px;
+   }
+   .services__img {
+      background-size: auto;
+      background-repeat: no-repeat;
+      height: 225px;
+      background: url(../img/services-min-1.jpg);
+   }
+   .services__img-2 {
+      background: url(../img/services-min-2.jpg);
+   }
+   .services__img-3 {
+      background: url(../img/services-min-3.jpg);
+   }
+   .services__descr {
+      gap: 15px;
+      padding: 20px 30px 60px;
+   }
+   .services__card-title {
+      font-size: 33px;
+      line-height: 110%;
    }
 } 
