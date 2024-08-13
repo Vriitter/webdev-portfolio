@@ -33,6 +33,10 @@ body {
    letter-spacing: -3%;
 }
 
+.body__fixed {
+   overflow: hidden;
+}
+
 .container {
    max-width: 1150px;
    margin: 0 auto;
@@ -92,6 +96,8 @@ body {
 
 /* BURGER_MENU */
 .burger-btn {
+   position: relative;
+   z-index: 200;
    display: none;
    width: 36px;
    height: 24px;
@@ -108,6 +114,63 @@ body {
 
 .burger__item:last-of-type {
    margin-bottom: 0;
+}
+
+.burger {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: end;
+   background-color: rgba(0, 0, 0, 0.4);
+   opacity: 0;
+   visibility: hidden;
+}
+
+.burger__open {
+   opacity: 1;
+   visibility: visible;
+}
+
+.burger__content {
+   width: 95%;
+   height: 100%;
+   background-color: #000;
+}
+
+.burger-logo {
+   display: block;
+   margin-bottom: 37px;
+   padding: 64px 28px;
+}
+
+.nav.burger-nav {
+   display: flex;
+   margin-left: 37px;
+   margin-bottom: 91px;
+}
+
+.burger-menu {
+   display: flex;
+   flex-direction: column;
+   gap: 21px;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.burger__contacts {
+   margin-left: 40px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   font-size: 20px;
+}
+
+.burger__contacts-title {
+   font-size: 16px;
+   opacity: 0.5;
 }
 
 /* PORTFOLIO */
