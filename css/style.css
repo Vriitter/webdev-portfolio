@@ -91,13 +91,13 @@ body {
 }
 
 /* BURGER_MENU */
-.burger {
+.burger-btn {
    display: none;
    width: 36px;
    height: 24px;
 }
 
-.burger__item {
+.burger-btn__item {
    display: block;
    width: 100%;
    height: 3px;
@@ -412,6 +412,10 @@ body {
 }
 
 @media (max-width: 960px) {
+   .title-h2 {
+      font-size: 45px;
+      line-height: 49px;
+   }
    .wrapper {
       background: url(../img/hero-bg-2.png) top/cover no-repeat;
    }
@@ -421,7 +425,7 @@ body {
    .nav {
       display: none;
    }
-   .burger {
+   .burger-btn {
       display: block;
    }
    .hero__inner {
@@ -432,9 +436,50 @@ body {
       font-size: 60px;
       line-height: 117%;
    }
+   .portfolio__title {
+      margin-bottom: 53px;
+   }
+   .portfolio__list {
+      margin-bottom: 64px;
+   }
+   .portfolio__item {
+      height: 445px;
+      border-radius: 25px;
+   }
+   .portfolio__item-topic {
+      top: 40px;
+      left: 35px;
+      height: 38px;
+      padding: 0 16px;
+      font-size: 16px;
+      line-height: 38px;
+   }
+   .portfolio__item-link {
+      left: 40px;
+      bottom: 40px;
+   }
+   .portfolio__item-title {
+      margin-bottom: 6px;
+      font-size: 28px;
+      line-height: 36px;
+   }
+   .portfolio__item-descr {
+      font-size: 24px;
+      line-height: 31px;
+   }
+   .portfolio__btn {
+      width: 460px;
+      height: 124px;
+      font-size: 24px;
+      line-height: 124px;
+   }
 }
 
 @media (max-width: 550px) {
+   .title-h2 {
+      font-size: 30px;
+      line-height: 39px;
+   }
    .wrapper {
       height: 716px;
       background: url(../img/hero-bg-3.png) top center/cover no-repeat;
@@ -446,8 +491,43 @@ body {
       line-height: 20px;
    }
    .hero__title {
-      width: 100%;
+      width: 98%;
       font-size: 40px;
       line-height: 117%;
+   }
+   .portfolio {
+      padding: 100px 0;
+   }
+   .portfolio__title {
+      max-width: 220px;
+      margin-bottom: 34px;
+   }
+   .portfolio__list {
+      margin-bottom: 60px;
+   }
+   .portfolio__item {
+      background-position: center left;
+   }
+   .portfolio__item-topic {
+      top: 30px;
+      left: 33px;
+      height: 30px;
+      padding: 0 20px;
+      font-size: 13px;
+      line-height: 30px;
+   }
+   .portfolio__item-link {
+      left: 35px;
+      bottom: 50px;
+   }
+   .portfolio__item-descr {
+      font-size: 16px;
+      line-height: 21px;
+   }
+   .portfolio__btn {
+      width: 100%;
+      height: 80px;
+      font-size: 18px;
+      line-height: 80px;
    }
 } 
